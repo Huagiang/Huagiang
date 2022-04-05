@@ -1,0 +1,13 @@
+module streams_exp
+2	   use shr_kind_mod,    only : SHR_KIND_CS, SHR_KIND_CL, SHR_KIND_CX
+3	   use shr_sys_mod,     only : shr_sys_abort
+…	
+4	   use shr_file_mod,    only : shr_file_getUnit, shr_file_freeUnit
+5	   use shr_stream_mod
+6	 
+7	   implicit none
+8	
+9	   private
+10	
+11	   public streams_exp_init
+12	   public streams_exp_set
